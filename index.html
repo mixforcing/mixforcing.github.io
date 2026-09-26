@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mix Forcing: Causal Pre-Training via Mixture Attention for Interactive World Models. Qualitative comparisons, long-horizon rollouts, and memory ability.">
+  <meta name="color-scheme" content="light">
+  <title>Mix Forcing: Causal Pre-Training via Mixture Attention for Interactive World Models</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="assets.js" defer></script>
+  <script src="keyboard.js" defer></script>
+  <script src="events.js" defer></script>
+  <script src="quality-chart.js" defer></script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#comparison">Skip to demos</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="ICLR2027 home">ICLR2027</a>
+      <span class="review-label">RESEARCH DEMOS</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="project-title">
+      <div class="hero-inner">
+        <p class="eyebrow"><span class="tiny-dot"></span> Supplementary Material</p>
+        <h1 id="project-title"><span>Mix</span> Forcing</h1>
+        <p class="hero-subtitle">Causal Pre-Training via Mixture Attention for Interactive World Models</p>
+        <p class="submission-note">Anonymous submission</p>
+      </div>
+      <div class="hero-baseline wrap" aria-hidden="true"></div>
+    </section>
+
+    <section class="section wrap section-card" id="comparison" aria-labelledby="comparison-title">
+      <div class="section-intro"><h2 id="comparison-title" class="section-index">01 <span>/ QUALITATIVE COMPARISON</span></h2><p>Comparison with state-of-the-art interactive world models.<br>The same scene and control sequence, with synchronized playback.</p></div>
+      <div class="scene-heading"><span class="overline">SELECT A SCENE</span><span class="candidate-tag">Candidate selection</span></div>
+      <div class="scene-selector" id="scene-selector" role="group" aria-label="Comparison scene"></div>
+      <div class="comparison-context"><div><span class="context-dot"></span><strong id="scene-name"></strong><span id="scene-category"></span></div><details><summary>Scene prompt</summary><p id="scene-prompt"></p></details></div>
+      <div class="comparison-grid" id="comparison-grid"></div>
+      <div class="transport" role="group" aria-label="Synchronized video controls">
+        <button class="play-button" id="comparison-play" type="button"><span aria-hidden="true">▶</span> Play all</button>
+        <button class="icon-button" id="comparison-restart" type="button" aria-label="Restart all comparison videos" title="Restart all">↺</button>
+        <label class="sr-only" for="comparison-seek">Comparison timeline</label><input id="comparison-seek" class="timeline" type="range" min="0" max="1000" value="0" step="1">
+        <output id="comparison-time" class="time-readout">00:00 / 00:00</output>
+        <label class="sr-only" for="comparison-speed">Comparison playback speed</label><select id="comparison-speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select>
+      </div>
+      <p class="player-message" id="comparison-status" role="status" aria-live="polite">Choose a scene, then play all six videos together.</p>
+      <section class="event-timeline" id="event-timeline" aria-label="Event timeline" hidden></section>
+    </section>
+
+    <section class="section wrap section-card" id="long-rollout" aria-labelledby="rollout-title">
+      <div class="section-intro"><h2 id="rollout-title" class="section-index">02 <span>/ LONG-HORIZON INTERACTION</span></h2><p>A recorded interactive model rollout.<br> Follow the journey, or jump to a moment below.</p></div>
+      <div class="cinema-frame"><video id="long-video" controls playsinline preload="none" aria-label="One-hour interactive model rollout"></video><div class="cinema-caption"><span><span class="live-dot"></span> ONE-HOUR INTERACTIVE ROLLOUT</span><label>Playback <select id="long-speed" aria-label="Long rollout playback speed"><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option><option value="8">8×</option><option value="16">16×</option></select></label></div></div>
+      <div class="chapter-heading"><span class="overline">MOMENTS ALONG THE WAY</span><span>Video time · click a frame to jump</span></div>
+      <div class="chapter-grid" id="chapter-grid" role="group" aria-label="One-hour rollout chapters"></div>
+      <p class="player-message" id="long-status" role="status" aria-live="polite"></p>
+      <figure class="rollout-quality" id="rollout-quality"></figure>
+    </section>
+
+    <section class="section wrap section-card" id="memory" aria-labelledby="memory-title">
+      <div class="section-intro"><h2 id="memory-title" class="section-index">03 <span>/ MEMORY ABILITY</span></h2><p>A landmark revisit sequence.<span class="memory-description-line">The camera looks away, then returns to the waterfall and red foliage seen earlier.</span></p></div>
+      <div class="cinema-frame memory-player"><video id="memory-video" controls muted playsinline preload="metadata" aria-label="Memory ability rollout"></video></div>
+      <p class="player-message" id="memory-status" role="status" aria-live="polite"></p>
+      <div class="memory-legend"><span><i class="landmark-a">A</i> Waterfall</span><span><i class="landmark-b">B</i> Red foliage</span><span class="legend-note">Same sequence · actual frame timestamps</span></div>
+      <div class="memory-grid" id="memory-grid" role="group" aria-label="Memory rollout timeline"></div>
+      <div class="memory-footer"><span class="memory-trace"><b class="text-a">A</b><span>→</span><b class="text-b">B</b><span>→</span><span>look away</span><span>→</span><b class="text-b">B</b><span>→</span><b class="text-a">A</b></span><p>Click a frame to jump to that moment in the video.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><span>Interactive video world models<br><small>Supplementary visual results · Candidate preview</small></span><a href="#top" class="back-top">Back to top ↑</a></footer>
+  <dialog id="media-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><h2 id="dialog-title">Demo</h2><button class="icon-button" id="dialog-close" aria-label="Close enlarged media">✕</button></div><div id="dialog-content"></div></dialog>
+  <noscript><p class="noscript-message">Enable JavaScript to select and play the local demo videos.</p></noscript>
+</body>
+</html>
