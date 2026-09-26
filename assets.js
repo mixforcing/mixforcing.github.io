@@ -11,7 +11,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/roaming_c8dbc98f2000/ours.mp4",
           "poster": "assets/posters/roaming_c8dbc98f2000-ours.jpg"
         },
@@ -147,7 +147,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/case15_0b53741fc6a2/ours.mp4",
           "poster": "assets/posters/case15_0b53741fc6a2-ours.jpg"
         },
@@ -319,7 +319,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/roaming_f6589633f36b/ours.mp4",
           "poster": "assets/posters/roaming_f6589633f36b-ours.jpg"
         },
@@ -521,7 +521,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/roaming_598471aeacd7/ours.mp4",
           "poster": "assets/posters/roaming_598471aeacd7-ours.jpg"
         },
@@ -631,7 +631,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/case15_29a85ea57536/ours.mp4",
           "poster": "assets/posters/case15_29a85ea57536-ours.jpg"
         },
@@ -859,7 +859,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/case15_9430473e4a93/ours.mp4",
           "poster": "assets/posters/case15_9430473e4a93-ours.jpg"
         },
@@ -975,7 +975,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/case15_9a722531e564/ours.mp4",
           "poster": "assets/posters/case15_9a722531e564-ours.jpg"
         },
@@ -1180,7 +1180,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/events_db822a4b3079/ours.mp4",
           "poster": "assets/posters/events_db822a4b3079-ours.jpg"
         },
@@ -1275,7 +1275,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/events_d111705347b1/ours.mp4",
           "poster": "assets/posters/events_d111705347b1-ours.jpg"
         },
@@ -1383,7 +1383,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/events_74aeca9ce532/ours.mp4",
           "poster": "assets/posters/events_74aeca9ce532-ours.jpg"
         },
@@ -1497,7 +1497,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/events_2d886d85be7b/ours.mp4",
           "poster": "assets/posters/events_2d886d85be7b-ours.jpg"
         },
@@ -1662,7 +1662,7 @@ window.MIXFORCING_ASSETS = {
       "videos": [
         {
           "method": "ours",
-          "label": "MixForcing",
+          "label": "Mix Forcing",
           "src": "assets/comparison/events_a17945d2d929/ours.mp4",
           "poster": "assets/posters/events_a17945d2d929-ours.jpg"
         },
